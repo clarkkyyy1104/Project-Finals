@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>shoe'S - Search</title>
+    <link rel="stylesheet" href="Fx.css">
+</head>
+<body>
+    <nav class="navbar">
+        <div class="container">
+            <div class="logo">
+                <img src="Logo/logo-dark-transparent.png" alt="shoe'S Logo" class="logo-img">
+            </div>
+            <div class="nav-links">
+                <a href="Dashboard.html">Home</a>
+                <a href="SearchPage.html">Search</a>
+                <a href="Cart.html">
+                    <div class="cart-icon">
+                        <span>🛒</span>
+                        <span class="cart-badge" id="cart-qty">0</span>
+                    </div>
+                </a>
+            </div>
+        </div>
+    </nav>
+
+    <div class="container">
+        <div class="search-container">
+            <h1>Search Products</h1>
+            <div class="search-box">
+                <input type="text" id="searchInput" placeholder="Search for shoes by name, brand, or category...">
+                <button id="searchBtn">🔍 Search</button>
+            </div>
+        </div>
+
+        <div id="searchResults" class="search-results">
+            <p class="search-message">Enter a search term to find products</p>
+        </div>
+
+        <section class="product-section" id="product-section">
+            <!-- Search results will appear here -->
+        </section>
+    </div>
+
+    <script src="SearchPage.js"></script>
+</body>
+</html>

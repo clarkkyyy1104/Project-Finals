@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>shoe'S - Product Details</title>
+    <link rel="stylesheet" href="Fx.css">
+</head>
+<body>
+    <nav class="navbar">
+        <div class="container">
+            <div class="logo">
+                <img src="Logo/logo-dark-transparent.png" alt="shoe'S Logo" class="logo-img">
+            </div>
+            <div class="nav-links">
+                <a href="Dashboard.html">Home</a>
+                <a href="SearchPage.html">Search</a>
+                <a href="Wishlist.html">❤️ Wishlist</a>
+                <a href="Cart.html">
+                    <div class="cart-icon">
+                        <span>🛒</span>
+                        <span class="cart-badge" id="cart-qty">0</span>
+                    </div>
+                </a>
+            </div>
+        </div>
+    </nav>
+
+    <div class="container">
+        <div class="product-detail">
+            <div class="product-image">
+                <img id="productImage" src="" alt="Product">
+            </div>
+            <div class="product-info">
+                <h1 id="productName"></h1>
+                <p class="brand" id="productBrand"></p>
+                <p class="price" id="productPrice"></p>
+                <p class="sku">SKU: <span id="productSKU"></span></p>
+                <p class="description" id="productDescription"></p>
+                
+                <div class="rating-section">
+                    <p class="stars" id="productStars"></p>
+                    <p id="productRating"></p>
+                </div>
+
+                <div class="stock-status" id="stockStatus"></div>
+
+                <div class="product-actions">
+                    <button class="addToCartBtn" id="productBtn" data-id="">Add to Cart</button>
+                    <button class="wishlist-btn-large" id="wishlistBtn" data-id="">
+                        <span id="wishlistIcon">🤍</span> Add to Wishlist
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="Product.js"></script>
+</body>
+</html>

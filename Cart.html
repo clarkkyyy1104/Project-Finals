@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>shoe'S - Shopping Cart</title>
+    <link rel="stylesheet" href="Fx.css">
+</head>
+<body>
+    <nav class="navbar">
+        <div class="container">
+            <div class="logo">
+                <img src="Logo/logo-dark-transparent.png" alt="shoe'S Logo" class="logo-img">
+            </div>
+            <div class="nav-links">
+                <a href="Dashboard.html">Home</a>
+                <a href="SearchPage.html">Search</a>
+                <a href="Cart.html">
+                    <div class="cart-icon">
+                        <span>🛒</span>
+                        <span class="cart-badge" id="cart-qty">0</span>
+                    </div>
+                </a>
+            </div>
+        </div>
+    </nav>
+
+    <div class="container">
+        <h1 class="page-title">Shopping Cart</h1>
+
+        <div class="cart-container">
+            <div class="cart-items" id="cart-items">
+                <!-- Cart items will be loaded here -->
+            </div>
+
+            <div class="cart-summary">
+                <h2>Order Summary</h2>
+                <div class="summary-row">
+                    <span>Subtotal:</span>
+                    <span id="subtotal">₱0.00</span>
+                </div>
+                <div class="summary-row">
+                    <span>Shipping:</span>
+                    <span id="shipping">₱10.00</span>
+                </div>
+                <div class="summary-row">
+                    <span>Tax (10%):</span>
+                    <span id="tax">₱0.00</span>
+                </div>
+                <hr>
+                <div class="summary-row total">
+                    <span>Total:</span>
+                    <span id="total">₱0.00</span>
+                </div>
+                <button class="checkout-btn" id="checkoutBtn">Proceed to Checkout</button>
+                <button class="clear-cart-btn" id="clearCartBtn">Clear Cart</button>
+            </div>
+        </div>
+    </div>
+
+    <script src="Cart.js"></script>
+</body>
+</html>
